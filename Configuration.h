@@ -53,7 +53,8 @@
 // 21 = Elefu Ra Board (v3)
 
 #ifndef MOTHERBOARD
-#define MOTHERBOARD 34 //arn
+//#define MOTHERBOARD 34 //arn
+#define MOTHERBOARD 33 //DSW 20171102 Changed motherboard to allow cooling fan control
 #endif
 
 // Define this to set a custom name for your generic Mendel,
@@ -335,13 +336,15 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // For deltabots this means top and center of the cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 301.6648  // For delta: Distance between nozzle and print surface after homing.1
+// 20171024 #define MANUAL_Z_HOME_POS 301.6648  // For delta: Distance between nozzle and print surface after homing.1
+#define MANUAL_Z_HOME_POS 300.5  // For delta: Distance between nozzle and print surface after homing.1
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE {4000, 4000, 4000, 0}  // set the homing speeds (mm/min)arn
 //arn
-#define Z_PROBE_OFFSET {0, 0, -5.1, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
+//20171024 #define Z_PROBE_OFFSET {0, 0, -5.1, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
+#define Z_PROBE_OFFSET {15, 7, -0.6, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
 //increase if nozzle is too close to bed
 
 
