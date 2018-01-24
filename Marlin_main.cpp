@@ -826,7 +826,8 @@ float z_probe() {
 		    current_position[E_AXIS]);
 
   feedrate = homing_feedrate[Z_AXIS];
-  destination[Z_AXIS] = mm+2;
+//   destination[Z_AXIS] = mm+2;
+  destination[Z_AXIS] = mm+10; // DSW 20171107 raise Z heigher with each probe
   prepare_move_raw();
   return mm;
 }
