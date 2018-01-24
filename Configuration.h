@@ -344,7 +344,9 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define HOMING_FEEDRATE {4000, 4000, 4000, 0}  // set the homing speeds (mm/min)arn
 //arn
 //20171024 #define Z_PROBE_OFFSET {0, 0, -5.1, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
-#define Z_PROBE_OFFSET {15, 7, -0.6, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
+//20171107 #define Z_PROBE_OFFSET {15, 7, -0.6, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
+//#define Z_PROBE_OFFSET {-15, -7, -2.6, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
+#define Z_PROBE_OFFSET {0, 0, -2.6, 0}  // Distance between hotend nozzle and deployed bed leveling probe. arn (x, y, z, e)
 //increase if nozzle is too close to bed
 
 
